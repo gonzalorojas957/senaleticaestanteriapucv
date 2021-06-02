@@ -1,0 +1,147 @@
+
+body{
+    max-width: 27.9cm;
+    margin: 0 auto;
+}
+.sistema{
+    margin-top: 3em;
+    border: 1px solid black;
+    background-color:#f6f6f5 !important;
+    max-width: 27.9cm;
+    height: 7cm;
+    display: grid;
+    grid-template-columns: 3.5% 20% 7.5% 34% 6.5% 25% 3.5%;
+}
+.number{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#nconcept{
+    font-family: "modernica";
+    font-weight: 500;
+    font-size: 80pt;
+    border: none;
+    color: #9f2b29;
+    border-radius: .1ex;
+}
+#nconcept:focus::placeholder{
+    color: transparent;
+}
+#nconcept::placeholder{
+    color:rgb(192, 192, 192);
+    transition: color 0.3s ease;
+}
+#nconcept:valid{
+    background-color:#f6f6f5;
+}
+#nsub{
+    font-family: "modernica";
+    font-size: 22pt;
+    border: none;
+    color: #9f2b29;
+    border-radius: .1ex;
+}
+#nsub:focus::placeholder{
+    color: transparent;
+}
+#nsub::placeholder{
+    color:rgb(192, 192, 192);
+    transition: color 0.3s ease;
+}
+#nsub:valid{
+    background-color:#f6f6f5;
+}
+.concept{
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#conceptgen{
+    font-family: "modernica";
+    font-weight: 500;
+    font-size: 35pt;
+    border: none;
+    color: #9f2b29;
+    border-radius: .1ex;
+    resize: vertical;
+}
+#conceptgen:focus::placeholder{
+    color: transparent;
+}
+#conceptgen::placeholder{
+    color:rgb(192, 192, 192);
+    transition: color 0.3s ease;
+}
+#conceptgen:valid{
+    background-color:#f6f6f5;
+}
+.line{
+    grid-column: 5/6;
+    width: 50%;
+    height: 72%;
+    margin: auto 0;
+    border-right: 0.3em solid #9f2b29;;
+}
+.sub{
+    grid-column: 6/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#subca{
+    font-family: "modernica";
+    font-size: 22pt;
+    border: none;
+    color: #9f2b29;
+    border-radius: .1ex;
+    resize: vertical;
+}
+#subca:focus::placeholder{
+    color: transparent;
+}
+#subca::placeholder{
+    color:rgb(192, 192, 192);
+    transition: color 0.3s ease;
+}
+#subca:valid{
+    background-color:#f6f6f5;
+}
+#save{
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.namesec{
+    display: inline;
+    font-family: "modernica";
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(163, 163, 163);
+}
+
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+    #conceptgen{
+        resize: none;
+    }
+    #subca{
+        resize: none;
+    }
+    #save{
+        display: none;
+    }
+    .namesec{
+        display: none;
+    }
+    .sistema{
+        border: 0;
+        border-top: 1px dashed;
+        border-bottom: 1px dashed;
+    }
+}
