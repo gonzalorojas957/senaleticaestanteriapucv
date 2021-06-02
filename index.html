@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Señaletica</title>
+</head>
+<body>
+    <div class="sistema">
+        <div class="number">
+            <div class="namesec">N° Concepto General</div>
+            <input id="nconcept" type="text" role="textbox" placeholder="616" required>
+            <div class="namesec">N° Subcategoría(s)</div>
+            <input id="nsub" type="text" role="textbox" placeholder="616.89 - 618.9 2" required>
+        </div>
+        <div class="concept">
+            <div class="namesec">Concepto General</div>
+            <!-- <input id="conceptgen" type="text" role="textbox" placeholder="Ciencias Medicas & Medicina" required>-->
+            <textarea id="conceptgen" class="input" role="textbox" contenteditable type="text" placeholder="Ciencias Medicas & Medicina"  required></textarea>
+        </div>
+        <div class="line">
+        </div>
+        <div class="sub">
+            <div class="namesec">Subcategoría(s)</div>
+            <!--<input id="subca" type="text" role="textbox" placeholder="Enfermedades. Geologia & otras especialidades medicas" required>-->
+            <textarea id="subca" class="input" role="textbox" contenteditable type="text" placeholder="Enfermedades. ginecologia & otras especialidades médicas "  required></textarea>
+        </div>
+    </div>
+    <div id="save">
+        <input type='button' id='printBtn' onClick='window.print();' value='Guardar Plantilla'>
+    </div>
+</body>
+</html>
