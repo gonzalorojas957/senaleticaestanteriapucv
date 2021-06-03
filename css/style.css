@@ -1,8 +1,40 @@
-
 body{
-    max-width: 27.9cm;
-    margin: 0 auto;
+    font-family: 'Modernica', serif;
+    width: 90%;
+    max-width: 900px;
+    margin: 1em auto;
+    font-size: 1.1em;
+    background-color: #F8F8F7; 
+    background-size: 70%;
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+h1{
+    color:#bc2724 ;
+}
+
+p{
+    color: #1F2624;
+}
+
+h2{
+    color:#bc2724 ;
+}
+
+
+h3{
+    color: #bc2724 ;
+}
+
+li{
+    color:#1F2624;
+    }
 .sistema{
     margin-top: 3em;
     border: 1px solid black;
@@ -125,7 +157,8 @@ body{
 @media print {
     @page {
         margin: 0;
-        size: A4;
+        size: letter;
+        size: landscape;
     }
     #conceptgen{
         resize: none;
