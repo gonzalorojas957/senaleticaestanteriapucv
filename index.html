@@ -8,6 +8,75 @@
     <title>Señaletica</title>
 </head>
 <body>
+<h1>Manual de Señalética para Estanterías Bibliotecas PUCV</h1>
+
+<p>El presente documento es un breve <strong>instructivo</strong> explicativo para funcionarios y bibliotecarios de la Pontificia Universidad Católica de Valparaíso para poder realizar por su propia cuenta la señalización correspondiente en los estantes de libro que yacen en cada una de las sedes bibliotecarias.</p>
+<p>La idea del presente instructivo es cuidar de la elaboración, materialidad y aplicación de esta señalización destinada tanto para estudiantes como para los mismos funcionarios, apoyando así la buena búsqueda y encuentro de los libros, así como su orden, predeterminado por los mismos funcionarios.</p>
+<p>A partir de este mismo documento se pueden generar las señalizaciones necesarias de manera remota y en impresoras de fácil acceso.</p>
+
+<h2>Materialidad & Formato</h2>
+
+<p>La señalización destinada para los estantes se compone gracias a dos elementos:</p>
+
+<ul>
+<li>Eastman Spectar TM 14471 (Plástico resistente, atornillado al estante).</li>
+<li>Papeleta informativa.</li>
+</ul>
+
+<p>Para motivos de este instructivo, se debe utilizar idealmente papel Hilado de 180 gramos. En caso de no ser posible, pueden utilizarse <strong>hojas de resma</strong>, tamaño <strong>carta</strong> (21,6x27,9) cms.</p>
+
+<h2>Sistema de Clasificación Decimal Dewey</h2>
+
+<p>La información representada en esta señalización se basa bajo el <strong>Sistema de Clasificación Decimal Dewey</strong>. Utilizando así, de forma genérica, el número del concepto; el concepto mismo y sus respectivas derivaciones según aplique para cada Biblioteca de la Universidad.</p>
+    
+<p><strong>Nota:</strong> De izquierda a Derecha. Los números correspondientes indican el <strong>Concepto General</strong> y las <strong>Subcategorías</strong> 
+(serie de números que se encuentran en los estantes). Consiguientemente se presenta el Concepto General y por último se muestran 
+los términos o Subcategorías del Concepto General. <strong>Todos los elementos están alineados verticalmente.</strong></p>
+
+<h2>Aspectos de Diseño</h2>
+
+<p>Se sugiere a los bibliotecarios leer los siguientes <strong>detalles técnicos</strong> del diseño para no perjudicar el formato de la señalización:</p>
+<ul>
+<li>El tamaño de cada papeleta es de <strong>27,9x7cms.</strong> (ancho por alto). Es decir, por cada hoja carta resultan 2 papeletas para estanterías.</li>
+<li>El tamaño del texto para el N° del Concepto General <strong>(616)</strong> se conserva en <strong>80pts</strong> y en <strong>Bold</strong>. Por el otro lado el N° de la Subcategoría se conserva en <strong>22pts</strong> y en <strong>Regular.</strong></li>
+<li>El tamaño de texto para el Concepto General se conserva en <strong>40pts</strong>, conservando una línea de texto. Si son dos o más líneas de texto debe considerarse una tipografía de <strong>30pts</strong> como mínimo. <strong>No disminuir</strong> por debajo de aquel cuerpo.</li>
+<li>Para las subcategorías conservar el tamaño tipográfico de <strong>22pts</strong>, respetar las iniciales con mayúscula y separar una temática de otra a través de un <strong>espaciado vertical (enter)</strong> y un <strong>punto final</strong> (4 líneas de texto máximo).</li>
+</ul>    
+    
+<p>Otras sugerencias para no afectar el diseño de las fichas:</p>
+
+<ul>
+<li>Preservar el Numero del Concepto General en 3 dígitos, sin decimales <strong>(616).</strong></li>
+<li>Abordar hasta 2 decimales posterior al Número del Concepto General en las Subcategorías <strong>(616.89).</strong></li>
+<li><strong>No</strong> modificar el alto de las cajas de texto, ni tampoco su ancho, esto deformará la propuesta de señalización.</li>
+<li><strong>No</strong> modificar los estilos de párrafo (alineación vertical y justificación hacia la izquierda), tampoco intervenir el interlineado.</li>
+<li><strong>Recordar</strong> que cada papeleta tiene un formato final de 27,9x7 cms. por lo tanto, al ser resultantes 2 papeletas por cada hoja
+tamaño carta, estas deberán ser cortadas de forma manual por cada bibliotecario o asistente de bibliotecas.</li>
+</ul>
+
+<h2>Generación de plantillas</h2>
+
+    <div class="sistema">
+        <div class="number">
+            <div class="namesec">N° Concepto General</div>
+            <input id="nconcept" type="text" role="textbox" placeholder="616" required>
+            <div class="namesec">N° Subcategoría(s)</div>
+            <input id="nsub" type="text" role="textbox" placeholder="616.89 - 618.9 2" required>
+        </div>
+        <div class="concept">
+            <div class="namesec">Concepto General</div>
+            <!-- <input id="conceptgen" type="text" role="textbox" placeholder="Ciencias Medicas & Medicina" required>-->
+            <textarea id="conceptgen" class="input" role="textbox" contenteditable type="text" placeholder="Ciencias Medicas & Medicina"  required></textarea>
+        </div>
+        <div class="line">
+        </div>
+        <div class="sub">
+            <div class="namesec">Subcategoría(s)</div>
+            <!--<input id="subca" type="text" role="textbox" placeholder="Enfermedades. Geologia & otras especialidades medicas" required>-->
+            <textarea id="subca" class="input" role="textbox" contenteditable type="text" placeholder="Enfermedades. ginecologia & otras especialidades médicas "  required></textarea>
+        </div>
+    </div>
+
     <div class="sistema">
         <div class="number">
             <div class="namesec">N° Concepto General</div>
