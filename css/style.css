@@ -154,6 +154,18 @@ li{
     color: rgb(163, 163, 163);
 }
 
+.decimal-dewey{
+    width: 110%;
+}
+
+.tamanos-tipos{
+    width: 110%;
+}
+
+.tamanos-hojas{
+    width: 110%;
+}
+
 @media print {
     @page {
         margin: 0;
@@ -177,4 +189,3 @@ li{
         border-top: 1px dashed;
         border-bottom: 1px dashed;
     }
-}
