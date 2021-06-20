@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Señaletica</title>
+    <style>
+        @font-face {
+            font-family: "Modernica";
+            src: url("css/Modernica.otf");
+            font-family: "ModernicaBold";
+            src: url("css/ModernicaBold.otf");
+        }
+        </style>
 </head>
 <body>
 <h1>Señalética para Estanterías Bibliotecas PUCV</h1>
@@ -72,7 +80,6 @@ tamaño carta, estas deberán ser cortadas de forma manual por cada bibliotecari
             <textarea id="subca" class="input" role="textbox" contenteditable type="text" placeholder="Enfermedades. ginecologia & otras especialidades médicas "  required></textarea>
         </div>
     </div>
-
     <div class="sistema">
         <div class="number">
             <div class="namesec">N° Concepto General</div>
@@ -94,7 +101,7 @@ tamaño carta, estas deberán ser cortadas de forma manual por cada bibliotecari
         </div>
     </div>
     <div id="save">
-        <input type='button' id='printBtn' onClick='window.print();' value='Guardar Plantilla'>
+        <input type='button' id='printBtn' onClick='window.print();' value='Guardar Plantilla' >
     </div>
 </body>
 </html>
