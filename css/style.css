@@ -51,7 +51,7 @@ li{
     justify-content: center;
 }
 #nconcept{
-    font-family: "modernica";
+    font-family: "Modernica";
     font-weight: 500;
     font-size: 80pt;
     border: none;
@@ -69,7 +69,7 @@ li{
     background-color:#f6f6f5;
 }
 #nsub{
-    font-family: "modernica";
+    font-family: "ModernicaBold";
     font-size: 22pt;
     border: none;
     color: #9f2b29;
@@ -92,7 +92,7 @@ li{
     justify-content: center;
 }
 #conceptgen{
-    font-family: "modernica";
+    font-family: "ModernicaBold";
     font-weight: 500;
     font-size: 35pt;
     border: none;
@@ -124,7 +124,7 @@ li{
     justify-content: center;
 }
 #subca{
-    font-family: "modernica";
+    font-family: "Modernica";
     font-size: 22pt;
     border: none;
     color: #9f2b29;
@@ -148,7 +148,7 @@ li{
 }
 .namesec{
     display: inline;
-    font-family: "modernica";
+    font-family: "Modernica";
     font-weight: 800;
     text-transform: uppercase;
     color: rgb(163, 163, 163);
